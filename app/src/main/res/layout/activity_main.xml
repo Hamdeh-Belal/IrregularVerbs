@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/main_welcomes"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/verbTestBt"
+        style="@style/mainBtStyles"
+        android:text="@string/irr_test_bt" />
+
+    <Button
+        android:id="@+id/sentencesTestBt"
+        style="@style/mainBtStyles"
+        android:text="@string/sent_bt" />
+
+    <Button
+        android:id="@+id/allVerbBt"
+        style="@style/mainBtStyles"
+        android:text="@string/all_irr_bt_img" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/irregular_verbs"
+        android:contentDescription="@string/irregular_verbs_image" />
+</androidx.appcompat.widget.LinearLayoutCompat>

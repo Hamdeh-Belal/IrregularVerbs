@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllVerbsActivity">
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        android:hint="Search Irregular Verbs" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_below="@id/editTextSearch"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageResult"
+        android:layout_width="wrap_content"
+        android:layout_height="93dp"
+        android:layout_below="@+id/buttonSearch"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="297dp"
+        android:layout_marginTop="11dp"
+        android:contentDescription="True or false"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:src="@drawable/initalimage"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/listViewIrregularVerbs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageResult"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="152dp"
+        android:layout_above="@+id/listViewIrregularVerbs"
+        android:layout_below="@+id/editTextSearch"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="9dp"
+        android:textSize="20sp"
+        android:layout_toStartOf="@+id/buttonSearch" />
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".VerbsTestActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/simple"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewVerb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_alignParentStart="true"
+        android:paddingTop="16dp"
+        android:text="@string/verbs"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/editTextVerb"
+        android:layout_width="163dp"
+        android:layout_height="67dp"
+        android:layout_alignTop="@id/textViewVerb"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="41dp"
+        android:layout_toEndOf="@id/textViewVerb"
+        android:hint="Enter Past Simple"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextPastParticiple"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textViewVerb"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@id/editTextVerb"
+        android:hint="Enter Past Participle"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewVerb"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:paddingTop="16dp"
+        android:text="Result:"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageResult"
+        android:layout_width="118dp"
+        android:layout_height="119dp"
+        android:layout_below="@id/textViewVerb"
+        android:layout_alignTop="@id/textViewResult"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/initalimage"
+        android:layout_toEndOf="@id/textViewResult" />
+
+    <Button
+        android:id="@+id/buttonCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextVerb"
+        android:layout_marginTop="102dp"
+        android:text="Check" />
+
+    <TextView
+        android:id="@+id/textViewTrueAnswer"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCheck"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="101dp"
+        android:paddingTop="16dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/verbTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_below="@+id/textViewWelcome"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="223dp"
+        android:layout_toEndOf="@+id/textViewVerb"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

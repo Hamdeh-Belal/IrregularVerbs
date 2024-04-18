@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IrregularVerbs</string>
+    <string name="irregular_verbs_image">irregular verbs</string>
+    <string name="all_irr_bt_img">All Irregular Verbs List</string>
+    <string name="sent_bt">Verbs in Sentences Test</string>
+    <string name="irr_test_bt">Irregular Verbs Test</string>
+    <string name="main_welcomes">\"Welcome to Irregular Verbs Helper! Let\'s tackle those tricky verbs together.\"</string>
+    <string name="test_verb_welcomes">Welcome to the Irregular Verb Test!</string>
+    <string name="verbs">Verb:</string>
+    <string name="checkButton">Check</string>
+    <string name="enter_solution">Enter Solution</string>
+    <string name="sentenceWelcomes">Welcome! Let\'s dive into some fun learning together!</string>
+    <string name="complete">Complete the following sentence with the correct form of the verb.</string>
+    <string name="simple">Provide the past simple and past participle forms for the given verb.</string>
+</resources>
